@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VEST Hotel</title>
+    <link rel="icon" type="image/x-icon" href="hotel_img/logo.png" />
+    <link rel="stylesheet" href="hotel2.css" />
+    <script src="hotel2.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body style="background-color:rgb(248, 243, 233);">
+    <button class="chat btn text-warning position-fixed end-0 bottom-0 m-3" style="z-index: 5;"><a href="#chatus" style="text-decoration: none;color: orange;font-weight: 500;">Chat Us</a></button>
+    <nav class="nav-head navbar navbar-expand-lg  px-4 position-sticky top-0">
+  <div class="container-fluid">
+  <!--left nav section--> 
+    <a class="navbar-brand fw-bold text-dark d-flex align-items-center" href="index.html" style=" background: linear-gradient(to top, #f5a748, #fd9001); padding: 10px; border-radius: 20px; box-shadow: 1px 1px rgb(205, 134, 1);">
+      VEST <span class="text-light ms-1" style="font-size: 18px; text-shadow: 1px 1px 2px rgb(38, 28, 2); font-weight: 700;">Hotel</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <i class="fas fa-bars text-dark fs-3" id="toggler-icon"></i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      
+      <!-- Left Nav Links -->
+      <ul class="navbar-nav gap-3 ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold text-decoration-none" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold text-decoration-none" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold text-decoration-none" href="rooms.html">Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold text-decoration-none" href="reviews.html">Reviews</a>
+        </li>
+      </ul>
+  <!--Right nav link-->
+      <div class="d-flex flex-column flex-lg-row align-items-lg-center mt-3 mt-lg-0 gap-2">
+        <button class="btn bg-warning btn-outline-alert fw-bold ms-lg-3" style="border-color: orange;background: linear-gradient(to top, #f5a748, #fd9001  );">Explore Us</button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+    <header>
+      <div class="header-info position-relative">
+        <img src="hotel_img/hotel main.jpg" alt="vest bg image" class="img-fluid w-100" />
+        <div id="head-cont" class="position-absolute top-50 start-50 translate-middle text-center" data-aos="fade-left">
+          <h6 class="text" style="color: rgb(206, 197, 184);font-weight: 600;">---LUXURY LIVING---</h6>
+          <h1 class="luxi" style="color:white;font-weight: 900;text-shadow: 0px 2px black;">Discover A Brand<br />Luxurious Hotel</h1>
+          <div class="d-flex flex-column justify-content-center gap-2 mt-3">
+            <button class="btn btn-warning" style="background: linear-gradient(to bottom, #f5a748, #fd9001);" id="head-img" ><a href="about.html" style="text-decoration: none;color: black;">More Info</a></button>
+            <button class="btn btn-light" id="head-img">Book a room</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="about p-4" id="about">
+      <h2>About Us</h2>
+      <hr />
+      <h4>Welcome to <span style="color: orange">VEST hotel</span></h4>
+      <p class="text-secondary" style="line-height: 1.6">
+        Welcome to VEST Hotels – where comfort meets class, and every stay feels like home.At VEST Hotels, luxury is not just a stay—it’s an experience crafted with care.
+      </p>
+      <div class="about-det d-flex justify-content-around text-center mt-4" >
+        <div class="about-in" data-aos="zoom-in-left">
+          <div id="imgd" >
+            <img src="hotel_img/booth-curtain_14646422.png" alt="rooms" />
+          </div>
+          <h3 style="font-weight: 800;">2500+</h3>
+          <p>Luxury Rooms</p>
+        </div>
+        <div class="about-in" data-aos="zoom-in">
+          <div id="imgd">
+           <img src="hotel_img/user-add_17766678.png" alt="user" />
+          </div>
+          <h3 style="font-weight: 800;">1 Million+</h3>
+          <p>Happy Customers</p>
+        </div>
+        <div class="about-in" data-aos="zoom-in-right">
+          <div id="imgd">
+            <img src="hotel_img/shield-check_3917627.png" alt="Experience" />
+          </div>
+          <h3 style="font-weight: 800;">5+ Years</h3>
+          <p>Experience</p>
+        </div>
+      </div>
+      <button class="btn btn-warning mt-4 " style="background: linear-gradient(to right, #f5a748, #fd9001);">Book your Rooms today!</button>
+    </section>
+
+            <section class="room p-4" id="rooms">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 id="exp">Available Rooms</h2>
+                    <a href="rooms.html" class="text-decoration-none text-secondary" id="ex">Explore More ></a>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                    <div class="col" data-aos="zoom-in-up">
+                    <div class="card h-100">
+                        <img src="hotel_img/hotel1.jpg" class="card-img-top" alt="Deluxe room" />
+                        <div class="card-body">
+                        <h3 class="card-title">Deluxe Room</h3>
+                        <ul>
+                            <li>King-size Bed</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Private Bathroom</li>
+                            <li>Air Conditioning</li>
+                            <li>Flat-screen TV</li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in-up">
+                        <div class="card h-100">
+                            <img src="hotel_img/hotel2.webp" alt="Executive room">
+                            <div class="card-body">
+                                <h3  class="card-title">Executive Room</h3>
+                                <ul>
+                                    <li>Queen-size Bed</li>
+                                    <li>Free Wi-Fi</li>
+                                    <li>Rain Shower</li>
+                                    <li>Air Conditioning</li>
+                                    <li>Flat-screen TV</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in-up">
+                        <div class="card h-100">
+                            <img src="hotel_img/hotel3.webp" alt="Premium room">
+                            <div class="card-body">
+                                <h3 class="card-title">Premium Suite</h3>
+                                <ul>
+                                    <li>Lounge Area</li>
+                                    <li>Mini Refrigerator</li>
+                                    <li>Balcony View</li>
+                                    <li>Premium Toiletries</li>
+                                    <li>Flat-screen TV</li>
+                            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in-up">
+                        <div class="card h-100">
+                            <img src="hotel_img/hotel4.webp" alt="Family room">
+                            <div class="card-body">
+                                <h3 class="card-title">Family Room</h3>
+                                <ul>
+                                    <li>2 Double Beds</li>
+                                    <li>Smart TV with OTT apps</li>
+                                    <li>Dining table</li>
+                                    <li>Air Conditioning</li>
+                                    <li>Flat-screen TV</li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in-up">
+                        <div class="card h-100">
+                            <img src="hotel_img/hotel5.webp" alt="budget room">
+                            <div class="card-body">
+                                <h3 class="card-title">budget Room</h3>
+                                <ul>
+                                    <li>Single Bed</li>
+                                    <li>Free Wi-Fi</li>
+                                    <li>Fan</li>
+                                    <li>Room Intercom</li>
+                                    <li>Flat-screen TV</li>
+                            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="zoom-in-up">
+                        <div class="card h-100">
+                            <img src="hotel_img/hotel6.webp" alt="Luxuary room" style="height: 48%;">
+                            <div class="card-body" style="border-color: orange;">
+                                <h3  class="card-title">Luxuary Suite</h3>
+                                <ul>
+                                    <li>Jacuzzi Bed</li>
+                                    <li>Free Wi-Fi</li>
+                                    <li>Home Theatre System</li>
+                                    <li>Air Conditioning</li>
+                                    <li>Soundproof Windows</li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <section class="sign p-4">
+      <div class="sign-main" data-aos="zoom-out-up">
+        <h3 style="padding: 8px;font-weight: 600;" >Sign Up</h3>
+        <hr style="color: rgb(200, 135, 56);margin: 5px;">
+        <form class="sign-bar d-flex flex-column gap-2">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="tel" name="number" placeholder="Phone No" required />
+          <button class="sign-up btn btn-xl btn-warning flex-start " style="font-size: larger;font-weight: 500;padding: 3px 10px;color: white;background: linear-gradient(to top, #f5a748, #fd9001);" >Sign Up</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="gallery" class="p-4">
+      <h2>Our Services</h2>
+      <div class="service-main d-flex flex-wrap gap-4">
+        <div class="flex-fill" data-aos="zoom-out-up">
+          <h4 class="text-center text-warning bg-dark py-2" style="border-radius: 10px ;margin: 5px;font-weight: 700;margin-top: 10px;">In India</h4>
+          <div class=" service-body p-3">
+                    <h5 class="hovers">Bangalore</h5>
+                    <h5 class="hovers">Chennai</h5>
+                    <h5 class="hovers">Gujarat</h5>
+                    <h5 class="hovers">Kerala</h5>
+                    <h5 class="hovers">Madurai</h5>
+                    <h5 class="hovers">Mumbai</h5>
+                    <h5 class="hovers">Ooty</h5>
+          </div>
+        </div>
+        <div class="flex-fill" data-aos="zoom-out-up">
+          <h4 class="text-center text-warning bg-dark py-2"  style="border-radius: 10px ;margin: 5px;font-weight: 700;margin-top: 10px;">Other Countries</h4>
+          <div class=" service-body p-3">
+                    <h5 class="hovers">Malasiya</h5>
+                    <h5 class="hovers">United States</h5>
+                    <h5 class="hovers">Singapore</h5>
+                    <h5 class="hovers">Sri Lanka</h5>
+                    <h5 class="hovers">England</h5>
+                    <h5 class="hovers">Swizz</h5>
+                    <h5 class="hovers">London</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-main p-4" id="chatus">
+      <div class="info" data-aos="zoom-out-up">
+        <h3>More Info</h3>
+        <div  id="info-head">
+          <p>Have questions or need assistance? Reach us anytime!</p>
+          <div id="info-body" >
+            <textarea name="message" rows="5" cols="5"  style="margin: 3px;"  placeholder="Have any question ask here and submit it...."></textarea>
+          </div>
+          <button class="sub-btn btn btn-warning text-white mt-2">Submit</button>
+        </div>
+      </div>
+      
+      <div id="popup-message" class="popup-messages" >
+        Your message has been submitted successfully. <br>Thank you for your question!
+      </div>
+
+      <div class="signup-popupp" id="signup-popup" >
+        You have signed up successfully!<br>Welcome to our Family 🎉
+      </div>
+
+
+    </section>
+
+    <footer >
+        <div class="foot">
+          <div id="foot-p" class=" justify-content-center">
+            <p>&copy; 2025 VEST Hotel</p>
+          <div>
+          <div id="foot-add">
+              <p>Email: <a href="https://mail.google.com/mail/u/3/#sent/KtbxLvHcKrhNkfgfkHbMXMphZhPpwSBBbV?compose=new" class="text-warning">vesthotels@gmail.com</a> | Instagram: <a href="#" class="text-warning">@vesthotels</a></p>
+              <address style="color:azure;">
+                1/234, NH44 main road,<br />
+                Chennai - 600 001
+              </address>
+          </div>
+        </div>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
